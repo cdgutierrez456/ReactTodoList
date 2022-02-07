@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
@@ -9,7 +9,7 @@ import { CreateTodoButton } from './CreateTodoButton'
 const todos = [
   {
     text: 'Cortar cebolla',
-    completed: false
+    completed: true
   },
   {
     text: 'React',
@@ -33,6 +33,7 @@ function App(props) {
             <TodoItem 
               key={todo.text}
               text={todo.text}
+              completed={todo.completed}
             />
           ))
         }

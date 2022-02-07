@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import './css/TodoSearch.css'
 
-function TodoSearch() {
-
-  const [searchValue, setSearchValue] = useState('');
+function TodoSearch({ searchValue, setSearchValue }) {
 
   const onSearchValueChange = (event) => {
     console.log(event.target.value)
@@ -18,7 +16,6 @@ function TodoSearch() {
         value={searchValue}
         onChange={onSearchValueChange}
       />
-      <p>{searchValue}</p>
     </Fragment>
   );
 }

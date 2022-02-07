@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
+import './css/TodoList.css'
 
 function TodoList(props) {
   return (
     <Fragment>
       <section>
-        {props.children}
+        <ul>
+          {props.children}
+        </ul>
       </section>
     </Fragment>
   );

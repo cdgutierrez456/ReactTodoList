@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
+import './css/TodoSearch.css'
 
 function TodoSearch() {
   return (
     <Fragment>
-      <input placeholder="Cebolla" />
+      <input className="TodoSearch" placeholder="Cebolla" />
     </Fragment>
   );
 }
